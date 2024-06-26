@@ -18,7 +18,7 @@ export default {
           } 
         });
         //Below code will execute after rendering "header-notifications" widget. And if the User is first time visitor he will be redirected to the Goups page.
-         api.decorateWidget("after-header-panel-outlet:after", helper => {
+         api.decorateWidget("header-notifications:after", helper => {
             const path = window.location.pathname;
             const attrs = helper.attrs;
             const { user } = attrs;
